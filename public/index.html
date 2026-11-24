@@ -6,8 +6,8 @@
 <meta name="description" content="CM Trading is a one-stop construction materials supplier in Bengaluru, from cement and TMT bars to bathware and furniture.">
 
 <title>CM Trading | Construction Materials Supplier in Bengaluru</title>
-<link rel="stylesheet" href="style.css?v=email-contact">
-<link rel="icon" href="cm-trading.png"><script src="catalog-downloads.js" defer></script><script src="brand-logos.js?v=email-contact" defer></script><script src="brands.js?v=email-contact" defer></script><script src="catalog.js?v=email-contact" defer></script><script src="inquiry.js?v=email-contact" defer></script><script src="brand-strip.js?v=email-contact" defer></script>
+<link rel="stylesheet" href="style.css?v=contact-buttons-2">
+<link rel="icon" href="cm-trading.png"><script src="catalog-downloads.js" defer></script><script src="brand-logos.js?v=contact-buttons-2" defer></script><script src="brands.js?v=contact-buttons-2" defer></script><script src="catalog.js?v=contact-buttons-2" defer></script><script src="inquiry.js?v=contact-buttons-2" defer></script><script src="brand-strip.js?v=contact-buttons-2" defer></script>
 </head>
 <body>
 <header class="bar">
@@ -63,7 +63,7 @@
 <p>From cement, TMT bars and masonry materials to plumbing, electrical wires, bathware, tiles, paints, furniture and home appliances, we help source what your project needs. Share your requirements and site location, and we will help you compare brands, confirm availability and discuss delivery options.</p>
 </section>
 <section id="inquiry" class="wrap info inquiry"><div><h2>Tell us what you need</h2><p>Share your site location and materials so we can check stock, pricing and delivery.</p>
-<p><a href="tel:+916361551956"><span aria-hidden="true">☎</span> +91 6361 55 1956</a></p><p class="email-contact"><a href="mailto:cmtradingsupplies@gmail.com"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg><span>cmtradingsupplies@gmail.com</span></a></p></div>
+<p><a href="tel:+916361551956"><span aria-hidden="true">☎</span> +91 6361 55 1956</a></p><p class="email-contact"><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=cmtradingsupplies%40gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email CM Trading in Gmail"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg><span>cmtradingsupplies@gmail.com</span></a></p></div>
 <form id="inquiry-form">
 <label>Name <input name="name" required autocomplete="name" maxlength="100"></label>
 <label>Site location <input name="location" required placeholder="Area or PIN code in Bengaluru" maxlength="150"></label>
@@ -72,8 +72,12 @@
 <label>Material needed <select name="product" required disabled><option value="">Select a build stage first</option></select></label>
 <label class="wide">Additional details (optional) <textarea name="materials" rows="4" maxlength="1200" placeholder="Quantities, sizes or preferred brands"></textarea></label>
 <div class="wide"><button class="outline" id="attach-list" type="button">Add materials from quote list</button></div>
-<div class="wide inquiry-actions"><button class="primary" type="submit" name="channel" value="whatsapp">Continue on WhatsApp</button><button class="outline" type="submit" name="channel" value="email">Continue by email</button></div>
+<div class="wide inquiry-actions">
+<button class="contact-choice inquiry-whatsapp" type="submit" name="channel" value="whatsapp"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.7a10.6 10.6 0 0 1-5.4-1.5l-.4-.2-3.9 1 1-3.8-.3-.4A10.7 10.7 0 1 1 16 26.7zm6-8c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.5-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.7l.5-.6.3-.5c.1-.2 0-.4 0-.6l-1-2.4c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1.1 2.8 1.3 3c.2.2 2.2 3.4 5.4 4.7.8.3 1.4.5 1.8.6.8.3 1.6.2 2.2.1.7-.1 1.9-.8 2.1-1.5.3-.7.3-1.3.2-1.4-.1-.1-.3-.2-.6-.4z"/></svg><span><strong>Continue with WhatsApp</strong><small>Chat with our team</small></span></button>
+<button class="contact-choice inquiry-email" type="submit" name="channel" value="email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m3 7 9 6 9-6"/></svg><span><strong>Continue with email</strong><small>Open a message in Gmail</small></span></button>
+</div>
 <p class="wide" id="inquiry-status" role="status">Review and send your inquiry in WhatsApp or your email app.</p>
+<div class="wide email-options" id="email-options" hidden><a id="open-gmail" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=cmtradingsupplies%40gmail.com" target="_blank" rel="noopener noreferrer">Open Gmail</a><a id="use-email-app" href="mailto:cmtradingsupplies@gmail.com">Use another email app</a></div>
 </form></section>
 <section class="brand-section" id="brand-showcase" aria-labelledby="brand-heading"><div class="wrap brand-heading"><div><h2 id="brand-heading">Explore our brands</h2><p>Browse catalogues and ask us about availability for your build.</p></div></div><div class="brand-window"><div id="brand-track" class="brand-track"></div></div></section>
 </main>

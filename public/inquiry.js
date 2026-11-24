@@ -57,8 +57,13 @@ form.addEventListener('submit', event => {
   ].join('\n');
   const body = encodeURIComponent(message);
   if (event.submitter?.value === 'email') {
-    window.location.href = 'mailto:cmtradingsupplies@gmail.com?subject=' + encodeURIComponent('Construction materials inquiry') + '&body=' + body;
-    inquiryStatus.textContent = 'Review the prepared inquiry in your email app and send it to cmtradingsupplies@gmail.com.';
+    const subject = encodeURIComponent('Construction materials inquiry');
+    const gmailUrl = 'https://mail.google.com/mail/?view=cm&fs=1&to=cmtradingsupplies%40gmail.com&su=' + subject + '&body=' + body;
+    document.querySelector('#open-gmail').href = gmailUrl;
+    document.querySelector('#use-email-app').href = 'mailto:cmtradingsupplies@gmail.com?subject=' + subject + '&body=' + body;
+    document.querySelector('#email-options').hidden = false;
+    window.open(gmailUrl, '_blank', 'noopener,noreferrer');
+    inquiryStatus.textContent = 'Review and send your inquiry in Gmail. If it did not open, use the Gmail link below or choose another email app.';
     return;
   }
   window.open('https://wa.me/916361551956?text=' + body, '_blank', 'noopener,noreferrer');

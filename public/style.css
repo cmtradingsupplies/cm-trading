@@ -104,6 +104,17 @@ h2 { font-size: clamp(40px, 4.6vw, 60px); }
 .inquiry select:disabled { background-color: #edf2f5; color: #8495a3; }
 .wide { grid-column: 1/-1; }
 .inquiry-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+.contact-choice { flex: 1 1 210px; display: flex; align-items: center; justify-content: center; gap: 12px; min-width: 0; min-height: 76px; padding: 16px; border: 1px solid transparent; border-radius: 12px; color: #fff; text-align: left; cursor: pointer; box-shadow: 0 5px 14px #14364c14; transition: box-shadow .2s, filter .2s; }
+.contact-choice svg { width: 30px; height: 30px; flex: none; }
+.contact-choice span { display: grid; gap: 4px; }
+.contact-choice strong { font-size: 15px; line-height: 1.35; }
+.contact-choice small { font-size: 13px; line-height: 1.4; font-weight: 400; color: #ffffffdf; }
+.inquiry-whatsapp { background: linear-gradient(135deg, #087a4c, #09643f); }
+.inquiry-email { background: linear-gradient(135deg, #234e70, #15364f); }
+.contact-choice:hover { filter: brightness(1.08); box-shadow: 0 8px 20px #14364c26; }
+.contact-choice:focus-visible { outline: 3px solid #e88e29; outline-offset: 3px; }
+.email-options:not([hidden]) { display: flex; flex-wrap: wrap; gap: 8px 20px; }
+.email-options a { display: inline-flex; align-items: center; min-height: 44px; font-size: 14px; font-weight: 600; text-decoration: underline; text-underline-offset: 4px; }
 .email-contact a { display: inline-flex; align-items: center; gap: 8px; max-width: 100%; }
 .email-contact svg { width: 20px; height: 20px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.8; }
 .email-contact span { overflow-wrap: anywhere; }
