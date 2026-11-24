@@ -3,7 +3,7 @@ on:
   push:
     branches: [main]
     paths:
-      - .github/workflows/import-once.yml
+      - .github/workflows/import-assets-once.yml
 
 permissions:
   contents: read

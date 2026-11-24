@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="CM Trading is a one-stop construction materials supplier in Bengaluru, from cement and TMT bars to bathware and furniture.">
+
+<title>CM Trading | Construction Materials Supplier in Bengaluru</title>
+<link rel="stylesheet" href="style.css?v=email-contact">
+<link rel="icon" href="cm-trading.png"><script src="catalog-downloads.js" defer></script><script src="brand-logos.js?v=email-contact" defer></script><script src="brands.js?v=email-contact" defer></script><script src="catalog.js?v=email-contact" defer></script><script src="inquiry.js?v=email-contact" defer></script><script src="brand-strip.js?v=email-contact" defer></script>
+</head>
+<body>
+<header class="bar">
+  <div class="wrap nav">
+    <div class="brand-contact">
+      <a class="brand" href="#" aria-label="CM Trading home">
+        <span class="logo-frame"><img src="cm-trading.png" alt="CM Trading · Construction Materials Supplier" width="1280" height="1280"></span>
+      </a>
+      <a class="header-phone" href="tel:+916361551956" aria-label="Call CM Trading on +91 6361 55 1956">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .3 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.4 1.8.6 2.8.7a2 2 0 0 1 1.8 2.1z"/></svg><span class="header-contact-text"><span>+91 6361 55 1956</span><small>One-stop construction supply</small></span>
+      </a>
+    </div>
+    <div class="header-tools">
+      <nav aria-label="Main navigation">
+        <a href="#materials">Materials</a>
+        <a href="#about">About</a>
+        <a href="#inquiry">Inquiry</a>
+      </nav>
+      <button class="outline header-quote" data-quote>Quote <span id="count">0</span></button>
+    </div>
+  </div>
+</header>
+<main>
+<section class="hero">
+<div class="wrap hero-inner">
+<p class="eyebrow"><span></span> CONSTRUCTION MATERIALS · BENGALURU</p>
+<h1>Going to build a home?<br><em>Let’s get the best rate.</em></h1>
+<p>Find materials for every stage of your build, from cement and TMT bars to bathware, finishes and furniture.</p>
+<div class="hero-actions"><a class="primary" href="#materials">Explore materials</a><a class="hero-secondary" href="#inquiry">Get a quote</a></div>
+</div>
+</section>
+<section id="stages" class="stage-section">
+<div class="wrap stages">
+<button data-stage="Foundation"><small>GROUNDWORK</small><strong>Foundation </strong></button>
+<button data-stage="Structure"><small>SHELL</small><strong>Structure </strong></button>
+<button data-stage="Services"><small>UTILITIES</small><strong>Plumbing &amp; electrical </strong></button>
+<button data-stage="Finishing"><small>INTERIORS</small><strong>Finishing </strong></button>
+</div>
+</section>
+<section class="wrap catalog" id="materials">
+<div class="section-head"><div><p class="section-kicker">FROM FOUNDATION TO FINISHING</p><h2>Find your materials</h2><p>Choose your build stage, then add materials to your quote.</p></div><label class="search"><span aria-hidden="true">⌕</span><input type="search" id="search" placeholder="Search cement, tiles, brands…" aria-label="Search materials"></label></div>
+<label class="mobile-stage-filter" for="browse-stage">What stage is your build at?
+<select id="browse-stage" aria-label="Browse materials by build stage"></select></label>
+<div id="filters" class="filters" aria-label="Filter by build stage"></div>
+<div class="catalog-meta"><span id="results" aria-live="polite"></span><span>Confirm brands, stock and delivery with CM Trading</span></div>
+<div id="products" class="products"></div>
+</section>
+<section class="wrap bottom"><div><h2>Ready to price your build?</h2><p>Send us your materials list for pricing and delivery options.</p></div><a class="primary" href="#inquiry">Start an inquiry</a></section>
+<section id="about" class="wrap info">
+<h2>About CM Trading</h2>
+<p>CM Trading is your one-stop construction materials supplier in Bengaluru, helping homeowners and contractors source supplies from foundation to finishing.</p>
+<p>We supply genuine, original products from trusted brands. Our focus is on authentic branded goods, reliable quality and fair pricing, so you can choose materials for your home with confidence.</p>
+<p>From cement, TMT bars and masonry materials to plumbing, electrical wires, bathware, tiles, paints, furniture and home appliances, we help source what your project needs. Share your requirements and site location, and we will help you compare brands, confirm availability and discuss delivery options.</p>
+</section>
+<section id="inquiry" class="wrap info inquiry"><div><h2>Tell us what you need</h2><p>Share your site location and materials so we can check stock, pricing and delivery.</p>
+<p><a href="tel:+916361551956"><span aria-hidden="true">☎</span> +91 6361 55 1956</a></p><p class="email-contact"><a href="mailto:cmtradingsupplies@gmail.com"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg><span>cmtradingsupplies@gmail.com</span></a></p></div>
+<form id="inquiry-form">
+<label>Name <input name="name" required autocomplete="name" maxlength="100"></label>
+<label>Site location <input name="location" required placeholder="Area or PIN code in Bengaluru" maxlength="150"></label>
+<label>Phone number <input name="phone" type="tel" required autocomplete="tel" maxlength="25"></label>
+<label>Build stage <select name="stage" required><option value="">Select a build stage</option></select></label>
+<label>Material needed <select name="product" required disabled><option value="">Select a build stage first</option></select></label>
+<label class="wide">Additional details (optional) <textarea name="materials" rows="4" maxlength="1200" placeholder="Quantities, sizes or preferred brands"></textarea></label>
+<div class="wide"><button class="outline" id="attach-list" type="button">Add materials from quote list</button></div>
+<div class="wide inquiry-actions"><button class="primary" type="submit" name="channel" value="whatsapp">Continue on WhatsApp</button><button class="outline" type="submit" name="channel" value="email">Continue by email</button></div>
+<p class="wide" id="inquiry-status" role="status">Review and send your inquiry in WhatsApp or your email app.</p>
+</form></section>
+<section class="brand-section" id="brand-showcase" aria-labelledby="brand-heading"><div class="wrap brand-heading"><div><h2 id="brand-heading">Explore our brands</h2><p>Browse catalogues and ask us about availability for your build.</p></div></div><div class="brand-window"><div id="brand-track" class="brand-track"></div></div></section>
+</main>
+<footer class="wrap footer"><span>CM Trading · Bengaluru, Karnataka, India<br>Jurisdiction: Bengaluru, Karnataka</span><a href="#">Back to top</a></footer>
+<dialog id="quote">
+<div class="dialog-head"><div><h2>Your quote list</h2><p>Set the quantities you need for your project.</p></div><form method="dialog"><button aria-label="Close quote list" class="outline">×</button></form></div>
+<div id="quote-items"></div>
+<label class="notes">Project notes <textarea id="notes" placeholder="Add sizes, preferred brands, or a delivery area"></textarea></label>
+<div class="dialog-actions"><button id="download" class="primary">Download materials list</button></div>
+<p id="message" role="status"></p>
+</dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+<div class="floating-contact" aria-label="Contact CM Trading">
+<a class="contact-call" href="tel:+916361551956" aria-label="Call CM Trading" title="Call CM Trading"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .3 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.4 1.8.6 2.8.7a2 2 0 0 1 1.8 2.1z"/></svg></a>
+<a class="contact-whatsapp" href="https://wa.me/916361551956" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp CM Trading" title="WhatsApp CM Trading"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.7a10.6 10.6 0 0 1-5.4-1.5l-.4-.2-3.9 1 1-3.8-.3-.4A10.7 10.7 0 1 1 16 26.7zm6-8c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.5-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.7l.5-.6.3-.5c.1-.2 0-.4 0-.6l-1-2.4c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1.1 2.8 1.3 3c.2.2 2.2 3.4 5.4 4.7.8.3 1.4.5 1.8.6.8.3 1.6.2 2.2.1.7-.1 1.9-.8 2.1-1.5.3-.7.3-1.3.2-1.4-.1-.1-.3-.2-.6-.4z"/></svg></a>
+</div>
+</body>
+</html>
+
